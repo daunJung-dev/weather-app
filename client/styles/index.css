@@ -1,0 +1,38 @@
+.app {
+  @apply container mx-auto w-screen items-center justify-center py-5;
+}
+
+.main-title {
+  @apply font-bold text-8xl;
+}
+
+.main-container {
+  @apply container flex flex-col text-center py-36;
+}
+
+.region-box{
+  @apply p-4;
+}
+
+.region-box .name {
+  @apply font-bold text-6xl py-4;
+}
+
+.region-box .status {
+  @apply font-medium text-4xl py-3;
+}
+
+.temperature-box {
+  @apply flex items-center flex-col justify-center;
+}
+
+.temperature-box > .current-value {
+  @apply text-9xl font-bold;
+}
+
+.temperature-gap {
+  @apply flex justify-between content-center w-80;
+}
+[class$='-temp-box'] {
+  @apply flex items-center justify-center text-3xl py-4;
+}

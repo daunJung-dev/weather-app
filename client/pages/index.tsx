@@ -1,10 +1,15 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import Region from "../components/Region";
+import TemperatureGap from "../components/TemperatureGap";
+import TodayWeatherBox from "../components/TodayWeatherBox";
 
 export default function Home() {
   return (
-    <div>
-      <main>{'Weather app'}</main>
+    <div className="app">
+      <main className="main-title">{"Weather app"}</main>
+      <div className="main-container">
+        <Region />
+        <TodayWeatherBox />
+      </div>
     </div>
   );
 }
